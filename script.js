@@ -12,8 +12,8 @@
       apresentar.innerHTML = value
       
       let  url = `https://servicodados.ibge.gov.br/api/v2/censos/nomes/${value}`;
-      
-      fetch(url)
+      let url1 = `https://servicodados.ibge.gov.br/api/v2/censos/nomes`
+      fetch(url1)
       .then((resp) => resp.json())
       .then(function(data) {
           for (let i = 0; i < data[0].res.length; i++) {
