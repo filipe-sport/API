@@ -13,7 +13,7 @@
       
       let  url = `https://servicodados.ibge.gov.br/api/v2/censos/nomes/${value}`;
       
-      fetch(url1)
+      fetch(url)
       .then((resp) => resp.json())
       .then(function(data) {
           for (let i = 0; i < data[0].res.length; i++) {
